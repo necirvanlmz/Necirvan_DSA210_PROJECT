@@ -22,8 +22,15 @@ Modern football is increasingly shaped by advanced metrics like expected goals (
 
 ## Dataset
 
-The dataset contains match-by-match statistics from the UEFA Euro 2024 tournament. Each row represents a match and includes data for both home and away teams.
+The project utilized two main datasets:
 
+**Euro 2024 Match Statistics**
+Including detailed match stats such as touches in opposition box, xG (open play and set piece), passes, and passing accuracy.
+
+**2023–24 Süper Lig Season Statistics**
+Covering full-season team statistics: points per match, possession percentage, box entries, and more.
+
+Each dataset was cleaned and merged to allow home and away teams to be treated uniformly.
 ### Key features used:
 
 - Expected goals (xG)
@@ -55,20 +62,37 @@ Missing values were handled through filtering, and home/away team stats were com
 2. **Feature Engineering:** Combined home and away stats into a single DataFrame.
 3. **Visualization:** Created scatter plots with regression lines and correlation heatmaps.
 4. **Statistical Testing:** Applied Pearson correlation test.
-## Results
 
-To evaluate the core hypothesis — that touches in the opponent’s penalty box correlate with expected goals (xG) — several statistical tests were performed:
+## Key Results and Findings
+**Core Analysis**
+- Opponent Box Touches vs xG
 
-- A **strong and statistically significant** positive correlation was found between box touches and xG:  
-  **Pearson r = 0.67**, **p < 0.01**
+-  Pearson r = 0.67, p < 0.001
+-  Strong positive and statistically significant relationship.
+-  Conclusion: More touches inside the box reliably predict higher xG.
 
-- Alternative variables were also tested for correlation with xG, but none showed statistical significance:
-  - **Accurate passes** → r = -0.17, p = 0.088
-  - **Pass accuracy percentage vs. open play xG** → r = -0.14, p = 0.156
+## Extended Analyses
 
-These results suggest that general passing statistics do not meaningfully predict xG. A correlation heatmap further confirmed that **box touches** had the strongest relationship with xG among the tested variables.
+| Relationship                               | Pearson r | p-value | Conclusion                                    |
+|--------------------------------------------|-----------|---------|-----------------------------------------------|
+| Accurate Passes vs xG                      | -0.17     | 0.088   | No significant relationship                   |
+| Pass Accuracy % vs Open Play xG           | -0.14     | 0.156   | No significant relationship                   |
+| Possession % vs Box Entries (Süper Lig)   | 0.76      | 0.0001  | Strong, significant positive relationship     |
+| Pass Accuracy % vs Open/Set xG Ratio      | -0.18     | 0.0741  | Weak negative trend (not statistically significant) |
 
----
+
+### Summary of Insights
+
+- ✅ **Touches in the opponent's box** are the most reliable indicator of xG generation.
+- ❌ **High passing accuracy alone** does not necessarily lead to better scoring chances.
+- ⚽ **Higher possession percentages** help teams gain more access to dangerous zones (box entries).
+- 🔄 **Teams with lower pass accuracy** may lean slightly more on open play chances rather than set pieces, but more data is needed to confirm this trend.
+
+  
+
+## 📊 Results
+
+The analysis focused on exploring the statistical relationships between key football performance metrics and expected goals (xG). The primary hypothesis was confirmed with strong support, and additional metrics were evaluated for their impact on xG.
 
 ## Conclusion
 
