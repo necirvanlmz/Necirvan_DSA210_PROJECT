@@ -3,7 +3,9 @@
 
 ## Project Overview
 
-This project analyzes match data from UEFA Euro 2024 to explore the relationship between attacking actions and scoring potential. Specifically, it investigates whether the number of touches a team makes inside the opponent's penalty box can significantly predict their expected goals (xG). The goal is to identify whether deep attacking presence is more meaningful than conventional metrics like overall possession.
+Over the course of this project, I explored how various offensive football statistics relate to expected goals (xG). Specifically, I analyzed whether the number of touches inside the opponent's box, passing accuracy, and possession metrics could predict xG performance.
+
+The main goal was to test a football-based hypothesis using real match data from Euro 2024 and the 2023–24 Süper Lig season, applying data science techniques learned in the DSA 210 course. Through data cleaning, visualization, and statistical analysis, I aimed to discover actionable insights into modern football tactics.
 
 ## Objectives
 
@@ -94,27 +96,18 @@ Missing values were handled through filtering, and home/away team stats were com
 
 The analysis focused on exploring the statistical relationships between key football performance metrics and expected goals (xG). The primary hypothesis was confirmed with strong support, and additional metrics were evaluated for their impact on xG.
 
-## Conclusion
+## ✅ Conclusion
 
-This project provides evidence that **deeper attacking metrics**, such as touches in the opposition penalty area, are stronger indicators of scoring potential (xG) than general possession or passing accuracy.
+This project confirmed that touches inside the opponent’s penalty area are a strong predictor of a team’s expected goals (xG). While commonly referenced metrics like accurate passes and pass accuracy did not correlate significantly with xG, spatial dominance — reflected in metrics like box entries — proved to be far more meaningful.
 
-While traditional metrics like accurate passes or pass percentage may reflect a team’s control of the ball, they did not correlate with the quality of scoring opportunities. This highlights the importance of **positional context** in modern football analytics: it’s not about how much possession a team has, but **where** and **how** they use it.
+The findings suggest that modern football analytics should shift the emphasis from possession volume and passing percentages toward positional context and offensive penetration. Teams that are able to enter dangerous zones are consistently more likely to generate high-quality chances, regardless of how clean their passing game appears.
 
-The findings support a shift in focus from surface-level stats toward metrics that capture **attacking intent and territorial advantage**.
+---
 
-## Future Work
+## 🔮 Future Work
 
-There are several directions in which this analysis could be expanded or refined:
-
-- **Include additional contextual metrics:** Incorporating pressing data, zone 14 entries, or progressive passes could provide deeper insights into xG generation patterns.
-- **Analyze temporal trends:** Comparing xG and box touches across match periods (first vs. second half) might reveal tactical or stamina-related effects.
-- **Efficiency analysis:** Calculating metrics like xG per box touch or xG per possession could help evaluate how efficiently teams convert attacking presence into quality chances.
-- **Team or match-up level modeling:** Exploring how different teams generate or concede xG based on their play styles could add a comparative dimension.
-- **Expand the dataset:** Applying the same methodology to domestic leagues or other international tournaments could test the generalizability of the findings.
-
-These extensions would not only validate the current insights but also help build more robust models for predicting scoring potential in football.
-
-
-## Final Note
-
-This project applies fundamental data science principles to a real-world problem: understanding football performance. It highlights how asking the right question—and choosing the right variable—can make all the difference.
+- **Include more tactical variables** such as progressive passes, key passes, and pressing intensity.
+- **Incorporate zone-based data** (e.g., final third passes, zone 14 entries) for deeper spatial analysis.
+- **Compare across leagues and tournaments** to evaluate whether these trends are universal or context-dependent.
+- **Build predictive models** using features like box touches and possession zones to estimate xG or match outcomes.
+- **Investigate defensive metrics** such as xGA and blocked shots to understand xG suppression strategies.
