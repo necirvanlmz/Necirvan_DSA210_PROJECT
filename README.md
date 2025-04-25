@@ -80,10 +80,16 @@ The findings support a shift in focus from surface-level stats toward metrics th
 
 ## Future Work
 
-- Compare box touches to actual goals, not just xG.
-- Analyze time-dependent box touches (first vs second half).
-- Extend model with pressing data or zone 14 entries.
-- Explore box touches per pass or per possession as efficiency metrics.
+There are several directions in which this analysis could be expanded or refined:
+
+- **Include additional contextual metrics:** Incorporating pressing data, zone 14 entries, or progressive passes could provide deeper insights into xG generation patterns.
+- **Analyze temporal trends:** Comparing xG and box touches across match periods (first vs. second half) might reveal tactical or stamina-related effects.
+- **Efficiency analysis:** Calculating metrics like xG per box touch or xG per possession could help evaluate how efficiently teams convert attacking presence into quality chances.
+- **Team or match-up level modeling:** Exploring how different teams generate or concede xG based on their play styles could add a comparative dimension.
+- **Expand the dataset:** Applying the same methodology to domestic leagues or other international tournaments could test the generalizability of the findings.
+
+These extensions would not only validate the current insights but also help build more robust models for predicting scoring potential in football.
+
 
 ## Final Note
 
