@@ -55,17 +55,28 @@ Missing values were handled through filtering, and home/away team stats were com
 2. **Feature Engineering:** Combined home and away stats into a single DataFrame.
 3. **Visualization:** Created scatter plots with regression lines and correlation heatmaps.
 4. **Statistical Testing:** Applied Pearson correlation test.
-
 ## Results
 
-- Pearson correlation coefficient (r): 0.67
-- p-value: < 0.0001
+To evaluate the core hypothesis — that touches in the opponent’s penalty box correlate with expected goals (xG) — several statistical tests were performed:
 
-The analysis shows a statistically significant, strong positive correlation between touches in the opponent's penalty box and expected goals (xG).
+- A **strong and statistically significant** positive correlation was found between box touches and xG:  
+  **Pearson r = 0.67**, **p < 0.01**
+
+- Alternative variables were also tested for correlation with xG, but none showed statistical significance:
+  - **Accurate passes** → r = -0.17, p = 0.088
+  - **Pass accuracy percentage vs. open play xG** → r = -0.14, p = 0.156
+
+These results suggest that general passing statistics do not meaningfully predict xG. A correlation heatmap further confirmed that **box touches** had the strongest relationship with xG among the tested variables.
+
+---
 
 ## Conclusion
 
-This project provides evidence that deeper attacking metrics like touches in the opposition box are better indicators of scoring potential than general possession statistics. The results suggest that tactical analysis should prioritize where a team has possession, not just how much.
+This project provides evidence that **deeper attacking metrics**, such as touches in the opposition penalty area, are stronger indicators of scoring potential (xG) than general possession or passing accuracy.
+
+While traditional metrics like accurate passes or pass percentage may reflect a team’s control of the ball, they did not correlate with the quality of scoring opportunities. This highlights the importance of **positional context** in modern football analytics: it’s not about how much possession a team has, but **where** and **how** they use it.
+
+The findings support a shift in focus from surface-level stats toward metrics that capture **attacking intent and territorial advantage**.
 
 ## Future Work
 
