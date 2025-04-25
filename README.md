@@ -1,5 +1,5 @@
 
-# Euro 2024 Football Data Analysis — DSA210 Project
+# Football Data Analysis — DSA210 Project
 
 ## Project Overview
 
