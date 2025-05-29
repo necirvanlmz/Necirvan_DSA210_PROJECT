@@ -72,6 +72,27 @@ Additionally:
 
 ---
 
+### 🧠 Prediction Approach
+
+In the final phase of the project, both **Linear Regression** and **Random Forest Regression** models were implemented to predict teams’ **expected goals (xG)** based on selected match statistics.
+
+📌 **Features Used**:
+- Possession Percentage (`possession_percentage`)
+- Touches in Opposition Box (`encounters_in_opponent_box`)
+- Accurate Passes Per Match (`accurate_passes_per_match`)
+- Big Chances Created (`big_chances_created`)
+
+These features were selected after performing correlation analyses, which indicated a strong positive relationship between **possession percentage and box touches** (Pearson r ≈ 0.76). This suggests that ball control and penetration are reliable indicators of attacking efficiency.
+
+🧪 **Models Trained**:
+- **Linear Regression**: Provided a baseline performance with R² scores indicating moderate predictive power.
+- **Random Forest Regression**: Improved prediction accuracy by capturing non-linear relationships between features and xG.
+
+🎯 **Goal**: To assess whether these match statistics can meaningfully estimate a team's attacking output in terms of xG, and to explore the predictive potential of football data.
+
+While the models had room for improvement, this phase demonstrated that predictive modeling is a feasible and valuable direction for future work.
+
+
 ## 🤖 Machine Learning Models
 
 ### 📌 Süper Lig: Predicting xG
