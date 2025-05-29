@@ -26,15 +26,41 @@ After cleaning and merging, home and away teams were combined into a single stru
 
 ---
 
-## 🧪 Hypotheses
+## 🎯 Hypothesis Testing Summary
 
-- **H₀**: There is no relationship between box touches and xG.
-- **H₁**: More touches in the opponent's box → higher expected goals.
+### ⚽ 1. Box Touches vs. xG
+- **H₀:** There is no correlation between touches in the opponent’s box and xG.  
+- **H₁:** There is a positive correlation between touches in the opponent’s box and xG.
 
-Additionally:
+✅ **Result:** A moderate positive correlation was found.  
+📈 **Implication:** Teams entering the opponent’s box more frequently tend to generate more xG.
 
-- As **pass accuracy decreases**, do teams rely more on **open play xG**?
-- Does **possession** lead to more **box entries**?
+---
+
+### 🎯 2. Pass Accuracy vs. Open Play xG
+- **H₀:** There is a positive correlation between pass accuracy and open play xG.  
+- **H₁:** There is no correlation between pass accuracy and open play xG.
+
+❌ **Result:** No statistically significant correlation found.  
+📉 **Implication:** High pass accuracy alone does not lead to better scoring opportunities unless it results in high-quality offensive actions.
+
+---
+
+### 🔁 3. Possession vs. Box Entries
+- **H₀:** Possession percentage has no correlation with box entries.  
+- **H₁:** Higher possession percentages are correlated with increased box entries.
+
+✅ **Result:** Strong, statistically significant correlation found in Süper Lig data.  
+🔎 **Implication:** Dominating possession increases the likelihood of entering the opponent's penalty area.
+
+---
+
+### 🧩 4. Pass Accuracy vs. xG Source Ratio
+- **H₀:** Pass accuracy does not affect the ratio of open play xG to set piece xG.  
+- **H₁:** Lower pass accuracy leads to a higher share of xG from open play compared to set pieces.
+
+⚠️ **Result:** A weak negative trend was observed, but it was not statistically significant.  
+🤔 **Implication:** There may be a tendency for teams with lower pass accuracy to rely more on open play, though more data is needed to support this claim.
 
 ---
 
