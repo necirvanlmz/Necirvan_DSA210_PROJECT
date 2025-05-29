@@ -81,13 +81,6 @@ Additionally:
 - Decision Tree Regressor → captured non-linear patterns
 - Random Forest → improved accuracy with `R² ≈ 0.92`
 
-### 📌 Euro 2024: Predicting xG
-**Features**: accurate passes, box touches, total passes, big chances  
-**Models Used**:
-- Linear Regression → limited due to small sample
-- Decision Tree and Random Forest → captured variability in fewer games
-
----
 
 ## 🔍 Clustering Analysis (K-Means)
 
